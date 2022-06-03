@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     this.apiService.getAllCats().subscribe(
       (res: any) => {
         // console.log(res);
-        this.cats = res;
+        this.cats = res.reverse();
 
       },
       (error: any) => {
