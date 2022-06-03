@@ -37,7 +37,7 @@ export class HomeComponent implements OnInit {
     age: 1,
     gender: 'Male',
     color: ''
-  }
+  };
 
   constructor(
     private apiService: ApiService
@@ -72,6 +72,13 @@ export class HomeComponent implements OnInit {
         this.createCatSucess = true;
         this.createCatFail = false;
 
+        this.cat = {
+          name: '',
+          age: 1,
+          gender: 'Male',
+          color: ''
+        };
+        this.showForm = false;
 
       },
       (error: any) => {
