@@ -1,5 +1,3 @@
-FROM httpd:2.4
+FROM nginx
 
-COPY index.html /usr/local//usr/local/apache2/htdocs/
-
-EXPOSE 80
+COPY dist/kcb-training/ /usr//share/nginx/html/
